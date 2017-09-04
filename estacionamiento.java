@@ -12,11 +12,13 @@ public class estacionamiento
         estacionamiento = new coche[150];
     }
     
+    
+    
     public void añadirCoche(String placas, int HoraEntrada, int MinEntrada)
     {
         int i;
         
-        if(estacionamiento[i]<=150)
+        //if(estacionamiento[i].espacio<=150) 
         {
           NoDePlacas = placas;
           HoraEntrada = HoraEntrada;
@@ -52,7 +54,7 @@ public class estacionamiento
             dinero2 = dinero2 + (t2 * 15);
             
             total = dinero + dinero2;
-            estacionamiento = estacionamiento -1;
+            //estacionamiento[i].espacio  = estacionamiento - 1;
           }
           else
           {
