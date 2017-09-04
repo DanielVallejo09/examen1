@@ -14,9 +14,9 @@ public class estacionamiento
     
     public void añadirCoche(String placas, int HoraEntrada, int MinEntrada)
     {
-        int var = 0;
+        int i;
         
-        if(var<= 150)
+        if(estacionamiento[i]<=150)
         {
           NoDePlacas = placas;
           HoraEntrada = HoraEntrada;
@@ -44,7 +44,7 @@ public class estacionamiento
         
         int total = 0;
         if(placasSal == this.NoDePlacas)
-        {
+          {
             t1 = HoraSalida - this.dameHoraEntrada();
             t2 = MinSalida - this.dameMinEntrada();
             
@@ -52,7 +52,12 @@ public class estacionamiento
             dinero2 = dinero2 + (t2 * 15);
             
             total = dinero + dinero2;
-        }
+            estacionamiento = estacionamiento -1;
+          }
+          else
+          {
+              System.out.println("Placas erroneas, verificar de nuevo");
+            }
     }
     
 
