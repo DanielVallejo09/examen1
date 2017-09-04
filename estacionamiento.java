@@ -38,12 +38,20 @@ public class estacionamiento
     {
         int t1 = 0;
         int t2 = 0;
+        
+        int dinero  = 0;
+        int dinero2 = 0;
+        
+        int total = 0;
         if(placasSal == this.NoDePlacas)
         {
             t1 = HoraSalida - this.dameHoraEntrada();
             t2 = MinSalida - this.dameMinEntrada();
             
+            dinero = dinero + (t1 *15);
+            dinero2 = dinero2 + (t2 * 15);
             
+            total = dinero + dinero2;
         }
     }
     
